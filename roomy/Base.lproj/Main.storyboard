@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +13,109 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="roomy" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="B6Q-NY-wCB">
+                                <rect key="frame" x="100" y="141" width="214" height="103"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="103" id="e6Q-sQ-ljz"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Find your roomate today" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kCs-3c-NsH">
+                                <rect key="frame" x="52" y="391" width="311" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Browse online for discounts" translatesAutoresizingMaskIntoConstraints="NO" id="seV-mm-u9F">
+                                <rect key="frame" x="0.0" y="472" width="414" height="390"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="390" id="5ac-9N-GlI"/>
+                                    <constraint firstAttribute="width" constant="414" id="cOA-73-FRX"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Roomy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ADl-VJ-tV9">
+                                <rect key="frame" x="95" y="288" width="224" height="84"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="70"/>
+                                <color key="textColor" red="0.95402711629867554" green="0.44073277711868286" blue="0.35568100214004517" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pXW-Cv-cYm">
+                                <rect key="frame" x="174" y="688" width="66" height="51"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <state key="normal" title="Start">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="kCs-3c-NsH" firstAttribute="top" secondItem="ADl-VJ-tV9" secondAttribute="bottom" constant="19" id="1Pp-rh-WSq"/>
+                            <constraint firstAttribute="trailing" secondItem="B6Q-NY-wCB" secondAttribute="trailing" constant="100" id="2Vt-PY-wCA"/>
+                            <constraint firstItem="ADl-VJ-tV9" firstAttribute="top" secondItem="B6Q-NY-wCB" secondAttribute="bottom" constant="44" id="3R9-Z4-aGa"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="seV-mm-u9F" secondAttribute="trailing" id="4bz-kL-dZJ"/>
+                            <constraint firstItem="B6Q-NY-wCB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="100" id="7b5-px-msm"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="pXW-Cv-cYm" secondAttribute="bottom" constant="123" id="9W1-Q9-gxL"/>
+                            <constraint firstItem="kCs-3c-NsH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="52" id="Ar1-c7-WcM"/>
+                            <constraint firstItem="B6Q-NY-wCB" firstAttribute="centerX" secondItem="ADl-VJ-tV9" secondAttribute="centerX" id="Doe-8w-4aL"/>
+                            <constraint firstItem="seV-mm-u9F" firstAttribute="firstBaseline" secondItem="kCs-3c-NsH" secondAttribute="baseline" constant="19" symbolType="layoutAnchor" id="K2Q-4D-xf4"/>
+                            <constraint firstItem="B6Q-NY-wCB" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="97" id="RDW-Ox-mzF"/>
+                            <constraint firstItem="seV-mm-u9F" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="bnZ-m6-B9d"/>
+                            <constraint firstItem="seV-mm-u9F" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="g9T-nv-eqb"/>
+                            <constraint firstItem="B6Q-NY-wCB" firstAttribute="centerX" secondItem="kCs-3c-NsH" secondAttribute="centerX" id="odl-zP-HPt"/>
+                            <constraint firstItem="B6Q-NY-wCB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pwh-sl-Pzn"/>
+                            <constraint firstItem="seV-mm-u9F" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="tKg-3M-sdC"/>
+                            <constraint firstItem="B6Q-NY-wCB" firstAttribute="centerX" secondItem="pXW-Cv-cYm" secondAttribute="centerX" id="zEq-Ow-nPY"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <segue destination="xdc-qe-OhF" kind="show" identifier="fromHomeSegue" id="t3e-Yv-D4H"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-14.492753623188406" y="51.5625"/>
+        </scene>
+        <!--Sign In View Controller-->
+        <scene sceneID="Zyg-UC-8Dl">
+            <objects>
+                <viewController id="xdc-qe-OhF" customClass="SignInViewController" customModule="roomy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SQa-fY-Xyx">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="pQ0-Je-hjX"/>
+                    </view>
+                    <connections>
+                        <segue destination="DyM-6i-8Jw" kind="show" identifier="fromSignInToHome" id="Eme-vY-uxf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="evB-hq-xhF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="759" y="52"/>
+        </scene>
+        <!--Home View Controller-->
+        <scene sceneID="cR1-ef-tOu">
+            <objects>
+                <viewController id="DyM-6i-8Jw" customClass="HomeViewController" customModule="roomy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eaH-Qo-BFl">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Sit-5J-Pvy"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TSO-Xr-alE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1529" y="52"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Browse online for discounts" width="336" height="280"/>
+        <image name="placeholder" width="512" height="512"/>
+    </resources>
 </document>

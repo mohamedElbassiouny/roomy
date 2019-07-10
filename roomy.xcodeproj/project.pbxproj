@@ -12,6 +12,8 @@
 		C7052D2F22D5639000ED10AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7052D2D22D5639000ED10AE /* Main.storyboard */; };
 		C7052D3122D5639100ED10AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7052D3022D5639100ED10AE /* Assets.xcassets */; };
 		C7052D3422D5639100ED10AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7052D3222D5639100ED10AE /* LaunchScreen.storyboard */; };
+		C7052D3E22D5F92600ED10AE /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7052D3D22D5F92600ED10AE /* SignInViewController.swift */; };
+		C7052D4022D5F98300ED10AE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7052D3F22D5F98300ED10AE /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		C7052D3022D5639100ED10AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C7052D3322D5639100ED10AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C7052D3522D5639100ED10AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C7052D3D22D5F92600ED10AE /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SignInViewController.swift; path = ../SignInViewController.swift; sourceTree = "<group>"; };
+		C7052D3F22D5F98300ED10AE /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,8 +59,10 @@
 			isa = PBXGroup;
 			children = (
 				C7052D2922D5639000ED10AE /* AppDelegate.swift */,
+				C7052D3D22D5F92600ED10AE /* SignInViewController.swift */,
 				C7052D2B22D5639000ED10AE /* ViewController.swift */,
 				C7052D2D22D5639000ED10AE /* Main.storyboard */,
+				C7052D3F22D5F98300ED10AE /* HomeViewController.swift */,
 				C7052D3022D5639100ED10AE /* Assets.xcassets */,
 				C7052D3222D5639100ED10AE /* LaunchScreen.storyboard */,
 				C7052D3522D5639100ED10AE /* Info.plist */,
@@ -137,6 +143,8 @@
 			files = (
 				C7052D2C22D5639000ED10AE /* ViewController.swift in Sources */,
 				C7052D2A22D5639000ED10AE /* AppDelegate.swift in Sources */,
+				C7052D3E22D5F92600ED10AE /* SignInViewController.swift in Sources */,
+				C7052D4022D5F98300ED10AE /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
