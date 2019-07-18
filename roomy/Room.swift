@@ -14,6 +14,8 @@ class Room {
     var address : String
     var numRoom : String
     var cost : Int
+    var description : String
+    
     
     
     var leftImage : UIImage 
@@ -21,7 +23,7 @@ class Room {
     var rightImage : UIImage
     
     
-    init(street : String, address:String, numRoom:String, cost:Int, leftImage:UIImage, middleImage:UIImage, rightImage:UIImage) {
+    init(street : String, address:String, numRoom:String, cost:Int, leftImage:UIImage, middleImage:UIImage, rightImage:UIImage, description: String) {
         self.address = address
         self.street = street
         self.numRoom = numRoom
@@ -29,6 +31,7 @@ class Room {
         self.leftImage = leftImage
         self.middleImage = middleImage
         self.rightImage = rightImage
+        self.description = description
     }
     
 }

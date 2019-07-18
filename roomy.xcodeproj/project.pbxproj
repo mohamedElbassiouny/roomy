@@ -15,6 +15,7 @@
 		C79F5CBD22DE132A006CE1EA /* RoomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79F5CBC22DE132A006CE1EA /* RoomCell.swift */; };
 		C79F5CBF22DE14E3006CE1EA /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79F5CBE22DE14E3006CE1EA /* Room.swift */; };
 		C79F5CC922DE2627006CE1EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C79F5CC822DE2627006CE1EA /* Assets.xcassets */; };
+		C79F5CCB22E0E9C1006CE1EA /* listingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79F5CCA22E0E9C1006CE1EA /* listingScreen.swift */; };
 		C7D1A8ED22DE03AD00295E0C /* RoomListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D1A8EC22DE03AD00295E0C /* RoomListScreen.swift */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +30,7 @@
 		C79F5CBC22DE132A006CE1EA /* RoomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomCell.swift; sourceTree = "<group>"; };
 		C79F5CBE22DE14E3006CE1EA /* Room.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Room.swift; sourceTree = "<group>"; };
 		C79F5CC822DE2627006CE1EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C79F5CCA22E0E9C1006CE1EA /* listingScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = listingScreen.swift; sourceTree = "<group>"; };
 		C7D1A8EC22DE03AD00295E0C /* RoomListScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomListScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -67,6 +69,7 @@
 				C7D1A8EC22DE03AD00295E0C /* RoomListScreen.swift */,
 				C7052D2B22D5639000ED10AE /* ViewController.swift */,
 				C7052D2D22D5639000ED10AE /* Main.storyboard */,
+				C79F5CCA22E0E9C1006CE1EA /* listingScreen.swift */,
 				C7052D3F22D5F98300ED10AE /* HomeViewController.swift */,
 				C7052D3222D5639100ED10AE /* LaunchScreen.storyboard */,
 				C7052D3522D5639100ED10AE /* Info.plist */,
@@ -150,6 +153,7 @@
 				C7D1A8ED22DE03AD00295E0C /* RoomListScreen.swift in Sources */,
 				C7052D2C22D5639000ED10AE /* ViewController.swift in Sources */,
 				C79F5CBF22DE14E3006CE1EA /* Room.swift in Sources */,
+				C79F5CCB22E0E9C1006CE1EA /* listingScreen.swift in Sources */,
 				C7052D2A22D5639000ED10AE /* AppDelegate.swift in Sources */,
 				C79F5CBD22DE132A006CE1EA /* RoomCell.swift in Sources */,
 				C7052D4022D5F98300ED10AE /* HomeViewController.swift in Sources */,

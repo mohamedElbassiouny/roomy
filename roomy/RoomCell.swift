@@ -20,5 +20,16 @@ class RoomCell: UITableViewCell {
     @IBOutlet weak var middleImage: UIImageView!
     @IBOutlet weak var rightImage: UIImageView!
     
+    
+    func setRoom(room :Room) {
+        streetLabel.text = room.street
+        addressLabel.text = room.address
+        numRoomsLabel.text = room.numRoom
+        costLabel.text = String(room.cost)
+        
+        leftImage.image = room.leftImage
+        rightImage.image = room.rightImage
+        middleImage.image = room.middleImage 
+    }
 
 }
