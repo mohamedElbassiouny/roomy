@@ -3,14 +3,16 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6CC775DB80FAC268DFEFC001 /* Pods_roomy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFE94E294638FDD367C3CE5B /* Pods_roomy.framework */; };
 		C7052D2A22D5639000ED10AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7052D2922D5639000ED10AE /* AppDelegate.swift */; };
 		C7052D2C22D5639000ED10AE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7052D2B22D5639000ED10AE /* ViewController.swift */; };
 		C7052D2F22D5639000ED10AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7052D2D22D5639000ED10AE /* Main.storyboard */; };
 		C7052D3422D5639100ED10AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7052D3222D5639100ED10AE /* LaunchScreen.storyboard */; };
+		C7351C9322E22A5500D8D207 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C7351C9222E22A5500D8D207 /* Default-568h@2x.png */; };
 		C79F5CBD22DE132A006CE1EA /* RoomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79F5CBC22DE132A006CE1EA /* RoomCell.swift */; };
 		C79F5CBF22DE14E3006CE1EA /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79F5CBE22DE14E3006CE1EA /* Room.swift */; };
 		C79F5CC922DE2627006CE1EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C79F5CC822DE2627006CE1EA /* Assets.xcassets */; };
@@ -19,17 +21,21 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		233B4AD69637D0AF3E13EA42 /* Pods-roomy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-roomy.debug.xcconfig"; path = "Target Support Files/Pods-roomy/Pods-roomy.debug.xcconfig"; sourceTree = "<group>"; };
 		C7052D2622D5639000ED10AE /* roomy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = roomy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7052D2922D5639000ED10AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C7052D2B22D5639000ED10AE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C7052D2E22D5639000ED10AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C7052D3322D5639100ED10AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C7052D3522D5639100ED10AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C7351C9222E22A5500D8D207 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		C79F5CBC22DE132A006CE1EA /* RoomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomCell.swift; sourceTree = "<group>"; };
 		C79F5CBE22DE14E3006CE1EA /* Room.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Room.swift; sourceTree = "<group>"; };
 		C79F5CC822DE2627006CE1EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C79F5CCA22E0E9C1006CE1EA /* listingScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = listingScreen.swift; sourceTree = "<group>"; };
 		C7D1A8EC22DE03AD00295E0C /* RoomListScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomListScreen.swift; sourceTree = "<group>"; };
+		E0B7866F159930BBBE0A4C1E /* Pods-roomy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-roomy.release.xcconfig"; path = "Target Support Files/Pods-roomy/Pods-roomy.release.xcconfig"; sourceTree = "<group>"; };
+		EFE94E294638FDD367C3CE5B /* Pods_roomy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_roomy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,17 +43,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6CC775DB80FAC268DFEFC001 /* Pods_roomy.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		13B3F5A2D9569373523A6566 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				233B4AD69637D0AF3E13EA42 /* Pods-roomy.debug.xcconfig */,
+				E0B7866F159930BBBE0A4C1E /* Pods-roomy.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B9BCBE0F8FAA8832B930C233 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EFE94E294638FDD367C3CE5B /* Pods_roomy.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C7052D1D22D5639000ED10AE = {
 			isa = PBXGroup;
 			children = (
+				C7351C9222E22A5500D8D207 /* Default-568h@2x.png */,
 				C7052D2822D5639000ED10AE /* roomy */,
 				C7052D2722D5639000ED10AE /* Products */,
+				13B3F5A2D9569373523A6566 /* Pods */,
+				B9BCBE0F8FAA8832B930C233 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -123,9 +150,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C7052D3822D5639100ED10AE /* Build configuration list for PBXNativeTarget "roomy" */;
 			buildPhases = (
+				D4A2479B68BD11EB53684AE9 /* [CP] Check Pods Manifest.lock */,
 				C7052D2222D5639000ED10AE /* Sources */,
 				C7052D2322D5639000ED10AE /* Frameworks */,
 				C7052D2422D5639000ED10AE /* Resources */,
+				96DCA1E62841C02EB8738D02 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -175,12 +204,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				C7052D3422D5639100ED10AE /* LaunchScreen.storyboard in Resources */,
+				C7351C9322E22A5500D8D207 /* Default-568h@2x.png in Resources */,
 				C79F5CC922DE2627006CE1EA /* Assets.xcassets in Resources */,
 				C7052D2F22D5639000ED10AE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		96DCA1E62841C02EB8738D02 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-roomy/Pods-roomy-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-roomy/Pods-roomy-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-roomy/Pods-roomy-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D4A2479B68BD11EB53684AE9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-roomy-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C7052D2222D5639000ED10AE /* Sources */ = {
@@ -336,6 +408,7 @@
 		};
 		C7052D3922D5639100ED10AE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 233B4AD69637D0AF3E13EA42 /* Pods-roomy.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -354,6 +427,7 @@
 		};
 		C7052D3A22D5639100ED10AE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E0B7866F159930BBBE0A4C1E /* Pods-roomy.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

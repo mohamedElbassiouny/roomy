@@ -133,15 +133,14 @@
                             </button>
                             <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oBh-1s-Dj4">
                                 <rect key="frame" x="142" y="560" width="130" height="44"/>
-                                <color key="backgroundColor" red="0.95402711630000003" green="0.44073277709999997" blue="0.35568100209999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <rect key="contentStretch" x="1" y="0.75" width="1" height="0.59999999999999998"/>
                                 <inset key="imageEdgeInsets" minX="16" minY="0.0" maxX="0.0" maxY="6"/>
-                                <size key="titleShadowOffset" width="11" height="0.0"/>
-                                <state key="normal" title="Sign In">
+                                <size key="titleShadowOffset" width="16" height="0.0"/>
+                                <state key="normal" title="Sign In" backgroundImage="Rectangle">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <variation key="heightClass=compact-widthClass=compact">
-                                    <color key="backgroundColor" red="0.95402711630000003" green="0.44073277709999997" blue="0.35568100209999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="backgroundColor"/>
                                 </variation>
                                 <connections>
                                     <segue destination="mqp-X2-XwS" kind="show" id="7Dn-HO-7ww"/>
@@ -458,6 +457,7 @@
     </scenes>
     <resources>
         <image name="Browse online for discounts" width="336" height="280"/>
+        <image name="Rectangle" width="296" height="54"/>
         <image name="chevron-left" width="8" height="14"/>
         <image name="facebook" width="512" height="512"/>
         <image name="google-plus" width="512" height="512"/>
@@ -466,7 +466,6 @@
         <image name="twitter" width="512" height="512"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="UnH-Ih-Plw"/>
-        <segue reference="6Ze-pi-Q4n"/>
+        <segue reference="7Dn-HO-7ww"/>
     </inferredMetricsTieBreakers>
 </document>
