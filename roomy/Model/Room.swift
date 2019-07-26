@@ -8,30 +8,27 @@
 
 import Foundation
 import UIKit
+import Alamofire
+import SwiftyJSON
+import RealmSwift
 
-class Room {
-    var street : String
-    var address : String
-    var numRoom : String
-    var cost : Int
-    var description : String
+class Room: NSObject {
     
+    var id: Int = 0
+    var city : String = ""
+    var address : String = ""
+    var price : String = ""
+    var desc : String = ""
+    var bed: Int = 0
+    var bath: Int = 0
+    var descLink: String = ""
     
-    
-    var leftImage : UIImage 
-    var middleImage : UIImage
-    var rightImage : UIImage
-    
-    
-    init(street : String, address:String, numRoom:String, cost:Int, leftImage:UIImage, middleImage:UIImage, rightImage:UIImage, description: String) {
-        self.address = address
-        self.street = street
-        self.numRoom = numRoom
-        self.cost = cost
-        self.leftImage = leftImage
-        self.middleImage = middleImage
-        self.rightImage = rightImage
-        self.description = description
-    }
+    var leftImage : UIImage = UIImage(named: "Placeholder")!
+    var middleImage : UIImage = UIImage(named: "Placeholder")!
+    var rightImage : UIImage = UIImage(named: "Placeholder")!
+    var descriptionText: String = ""
+    var descriptionPicLink: String = ""
+    var descriptionPic: UIImageView = UIImageView()
     
 }
+

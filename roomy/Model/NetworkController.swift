@@ -16,13 +16,13 @@ class NetworkController: NSObject {
     
     class func logIn(email: String, password: String, completion: @escaping (_ error : Error?, _ succes: Bool)->Void)
     {
-        let url = URL(string: "https://roomy-application.herokuapp.com/auth/login")!
+        let loginUrl = URLS.login
         
         let parameters = [
             "email" : email,
             "password" : password ]
         
-        AF.request(url, method: .post, parameters: parameters).responseJSON { reponse in
+        AF.request(loginUrl, method: .post, parameters: parameters).responseJSON { reponse in
             switch reponse.result
             {
             case.failure(let error ):
@@ -32,6 +32,8 @@ class NetworkController: NSObject {
                 
                 if let auth_token = json["auth_token"].string{
                     print("auth_token: \(auth_token)")
+                    // saving auth_token in DEFAULTS
+                    Helper.saveAPIToken(token: auth_token)
                     completion(nil,true)
                 }
             }
@@ -41,14 +43,14 @@ class NetworkController: NSObject {
     
     class func signUp(name: String, email: String, password: String, completion: @escaping (_ error : Error?, _ succes: Bool)->Void)
     {
-        let url = URL(string: "https://roomy-application.herokuapp.com/signup")!
+        let signUpUrl = URLS.signUp
         
         let parameters = [
             "name": name,
             "email" : email,
             "password" : password ]
         
-        AF.request(url, method: .post, parameters: parameters).responseJSON { reponse in
+        AF.request(signUpUrl, method: .post, parameters: parameters).responseJSON { reponse in
             switch reponse.result
             {
             case.failure(let error ):
@@ -56,8 +58,10 @@ class NetworkController: NSObject {
             case.success(let value):
                 let json = JSON(value)
                 
-                if let auth_token = json["message"]["auth_token"].string{
-                    print("auth_token: \(auth_token)")
+                if let auth_token = json["auth_token"].string{
+                    print("token_API: \(auth_token)")
+                    // saving auth_token in DEFAULTS
+                    Helper.saveAPIToken(token: auth_token)
                     completion(nil,true)
                 }
             }

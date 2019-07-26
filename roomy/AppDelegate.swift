@@ -21,6 +21,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //        window?.makeKeyAndVisible()
 //        let navController = UINavigationController(rootViewController: ViewController())
 //        window?.rootViewController = navController
+        
+        if let auth_token = Helper.getAPIToken(){
+            print("auth_token\(auth_token)")
+            let tab = UIStoryboard(name: "Main", bundle: nil ).instantiateViewController(withIdentifier: "Main")
+            window?.rootViewController = tab
+            
+        }
+        
         return true
     }
 
