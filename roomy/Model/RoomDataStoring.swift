@@ -11,13 +11,13 @@ import RealmSwift
 
 class RoomDataStoring: Object {
     @objc dynamic var id: Int = 1000
-    @objc dynamic var street: String = ""
+    @objc dynamic var city: String = ""
     @objc dynamic var address: String = ""
-    @objc dynamic var cost: String = ""
+    @objc dynamic var price: String = ""
     @objc dynamic var bed: Int = 0
     @objc dynamic var bath: Int = 0
-    @objc dynamic var desc: String = ""
-    @objc dynamic var descLink: String = ""
+    @objc dynamic var descriptionText: String = ""
+    @objc dynamic var descriptionLink: String = ""
     
     override static func primaryKey() -> String? {
         return "id"
@@ -29,13 +29,13 @@ class RoomDataStoring: Object {
             
             let roomRealm = RoomDataStoring()
             roomRealm.id = room.id
-            roomRealm.street = room.street
+            roomRealm.city = room.city
             roomRealm.address = room.address
-            roomRealm.cost = room.cost
+            roomRealm.price = room.price
             roomRealm.bed = room.bed
             roomRealm.bath = room.bath
-            roomRealm.desc = room.desc
-            roomRealm.descLink = room.descLink
+            roomRealm.descriptionText = room.desc
+            roomRealm.descriptionLink = room.descLink
             realm.add(roomRealm, update: .modified)
         }
     }

@@ -15,7 +15,6 @@
 		C7351C9322E22A5500D8D207 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C7351C9222E22A5500D8D207 /* Default-568h@2x.png */; };
 		C7351C9922E263F200D8D207 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7351C9822E263F200D8D207 /* LogInViewController.swift */; };
 		C7351C9B22E27F7000D8D207 /* NetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7351C9A22E27F7000D8D207 /* NetworkController.swift */; };
-		C7351C9D22E28D0600D8D207 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7351C9C22E28D0600D8D207 /* Extensions.swift */; };
 		C7351CA122E292C800D8D207 /* signUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7351CA022E292C800D8D207 /* signUpVC.swift */; };
 		C764DD1822E7A50600BEB453 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C764DD1722E7A50600BEB453 /* Helper.swift */; };
 		C764DD1B22E9F7BA00BEB453 /* NetworkConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = C764DD1A22E9F7BA00BEB453 /* NetworkConfig.swift */; };
@@ -23,7 +22,7 @@
 		C764DD1F22EA24EC00BEB453 /* RoomDataStoring.swift in Sources */ = {isa = PBXBuildFile; fileRef = C764DD1E22EA24EC00BEB453 /* RoomDataStoring.swift */; };
 		C764DD2A22EB33A900BEB453 /* RoomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C764DD2822EB33A900BEB453 /* RoomTableViewCell.swift */; };
 		C764DD2B22EB33A900BEB453 /* RoomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C764DD2922EB33A900BEB453 /* RoomTableViewCell.xib */; };
-		C79F5CBD22DE132A006CE1EA /* RoomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79F5CBC22DE132A006CE1EA /* RoomCell.swift */; };
+		C764DD2D22EB5A2700BEB453 /* internetChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C764DD2C22EB5A2700BEB453 /* internetChecker.swift */; };
 		C79F5CBF22DE14E3006CE1EA /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79F5CBE22DE14E3006CE1EA /* Room.swift */; };
 		C79F5CC922DE2627006CE1EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C79F5CC822DE2627006CE1EA /* Assets.xcassets */; };
 		C79F5CCB22E0E9C1006CE1EA /* listingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79F5CCA22E0E9C1006CE1EA /* listingScreen.swift */; };
@@ -41,7 +40,6 @@
 		C7351C9222E22A5500D8D207 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		C7351C9822E263F200D8D207 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		C7351C9A22E27F7000D8D207 /* NetworkController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkController.swift; sourceTree = "<group>"; };
-		C7351C9C22E28D0600D8D207 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		C7351CA022E292C800D8D207 /* signUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signUpVC.swift; sourceTree = "<group>"; };
 		C764DD1722E7A50600BEB453 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		C764DD1A22E9F7BA00BEB453 /* NetworkConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConfig.swift; sourceTree = "<group>"; };
@@ -49,7 +47,7 @@
 		C764DD1E22EA24EC00BEB453 /* RoomDataStoring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomDataStoring.swift; sourceTree = "<group>"; };
 		C764DD2822EB33A900BEB453 /* RoomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomTableViewCell.swift; sourceTree = "<group>"; };
 		C764DD2922EB33A900BEB453 /* RoomTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RoomTableViewCell.xib; sourceTree = "<group>"; };
-		C79F5CBC22DE132A006CE1EA /* RoomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomCell.swift; sourceTree = "<group>"; };
+		C764DD2C22EB5A2700BEB453 /* internetChecker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = internetChecker.swift; sourceTree = "<group>"; };
 		C79F5CBE22DE14E3006CE1EA /* Room.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Room.swift; sourceTree = "<group>"; };
 		C79F5CC822DE2627006CE1EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C79F5CCA22E0E9C1006CE1EA /* listingScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = listingScreen.swift; sourceTree = "<group>"; };
@@ -145,6 +143,7 @@
 				C764DD1722E7A50600BEB453 /* Helper.swift */,
 				C764DD1C22EA1F2C00BEB453 /* RoomParsing.swift */,
 				C764DD1E22EA24EC00BEB453 /* RoomDataStoring.swift */,
+				C764DD2C22EB5A2700BEB453 /* internetChecker.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -153,7 +152,6 @@
 			isa = PBXGroup;
 			children = (
 				C764DD2722EB339000BEB453 /* Cells */,
-				C79F5CBC22DE132A006CE1EA /* RoomCell.swift */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -165,7 +163,6 @@
 				C7D1A8EC22DE03AD00295E0C /* RoomListScreen.swift */,
 				C7052D2B22D5639000ED10AE /* ViewController.swift */,
 				C79F5CCA22E0E9C1006CE1EA /* listingScreen.swift */,
-				C7351C9C22E28D0600D8D207 /* Extensions.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -306,12 +303,11 @@
 				C79F5CBF22DE14E3006CE1EA /* Room.swift in Sources */,
 				C764DD2A22EB33A900BEB453 /* RoomTableViewCell.swift in Sources */,
 				C7351C9922E263F200D8D207 /* LogInViewController.swift in Sources */,
-				C7351C9D22E28D0600D8D207 /* Extensions.swift in Sources */,
 				C79F5CCB22E0E9C1006CE1EA /* listingScreen.swift in Sources */,
 				C7052D2A22D5639000ED10AE /* AppDelegate.swift in Sources */,
 				C764DD1D22EA1F2C00BEB453 /* RoomParsing.swift in Sources */,
-				C79F5CBD22DE132A006CE1EA /* RoomCell.swift in Sources */,
 				C7351CA122E292C800D8D207 /* signUpVC.swift in Sources */,
+				C764DD2D22EB5A2700BEB453 /* internetChecker.swift in Sources */,
 				C7351C9B22E27F7000D8D207 /* NetworkController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

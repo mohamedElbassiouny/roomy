@@ -11,8 +11,7 @@ import Alamofire
 import SwiftyJSON
 import RealmSwift
 
-extension NetworkController
-{
+class GetRooms:NSObject{
     
     /*
          id": 1,
@@ -52,10 +51,10 @@ extension NetworkController
                 
                 room.id = data["id"]?.int ?? 0
                 room.desc = data["description"]?.string ?? ""
-                room.cost = data["price"]?.string ?? "0$"
+                room.price = data["price"]?.string ?? "0$"
                 room.address = data["title"]?.string ?? "title"
-                room.street = data["place"]?.string ?? "place"
-                room.descLink = data["image"]?.string ?? "image link"
+                room.city = data["place"]?.string ?? "place"
+                room.descriptionPicLink = data["image"]?.string ?? "image link"
                 rooms.append(room)
                 roomDataStoring.addRoomsToRealm(room: room)
             }
@@ -80,11 +79,11 @@ extension NetworkController
             let room = Room()
             
             room.id = data.id
-            room.desc = data.desc
-            room.cost = data.cost
+            room.descriptionText = data.descriptionText
+            room.price = data.price
             room.address = data.address
-            room.street = data.street
-            room.descLink = data.descLink
+            room.city = data.city
+            room.descriptionPicLink = data.descriptionLink
             rooms.append(room)
         }
         completion(nil, rooms)
