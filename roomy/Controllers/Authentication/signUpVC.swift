@@ -10,7 +10,7 @@ import UIKit
 import Alamofire
 import SwiftyJSON
 
-class signUpVC: UIViewController {
+class signUpViewController: UIViewController {
 
     @IBOutlet weak var userNameLabel: UITextField!
     @IBOutlet weak var emaillabel: UITextField!

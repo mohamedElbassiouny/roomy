@@ -13,16 +13,16 @@ class Helper: NSObject {
     class func restartAPP() {
         guard let window = UIApplication.shared.keyWindow else {return}
        
-        let sb = UIStoryboard(name: "Main", bundle: nil)
-        var vc: UIViewController
+        let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+        var viewController: UIViewController
         if getAPIToken() == nil{
                 // go to auth screen
-            vc = sb.instantiateInitialViewController()!
+            viewController = storyBoard.instantiateInitialViewController()!
         }else{
-            vc = sb.instantiateViewController(withIdentifier: "Main")
+            viewController = storyBoard.instantiateViewController(withIdentifier: "Main")
         }
         
-        vc = window.rootViewController!
+        viewController = window.rootViewController!
         UIView.transition(with: window, duration: 0.5, options: .transitionFlipFromLeft, animations: nil, completion: nil)
     }
     

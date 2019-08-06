@@ -22,10 +22,9 @@ class Room: NSObject {
     var bed: Int = 0
     var bath: Int = 0
     var descLink: String = ""
-    
-    var leftImage : UIImage = UIImage(named: "Placeholder")!
-    var middleImage : UIImage = UIImage(named: "Placeholder")!
-    var rightImage : UIImage = UIImage(named: "Placeholder")!
+    var leftImage : UIImage = UIImage(named: "PlaceholderImage")!
+    var middleImage : UIImage = UIImage(named: "PlaceholderImage")!
+    var rightImage : UIImage = UIImage(named: "PlaceholderImage")!
     var descriptionText: String = ""
     var descriptionPicLink: String = ""
     var descriptionPic: UIImageView = UIImageView()

@@ -12,17 +12,6 @@ import SwiftyJSON
 import RealmSwift
 
 class GetRooms:NSObject{
-    
-    /*
-         id": 1,
-         "title": "First Room",
-         "price": "200$",
-         "place": "Tahrir",
-         "image": "www.google.com",
-         "description": "Anything goes here",
-         "created_at": "2009-04-30T09:44:35.000Z",
-     */
-    
     class func getRoomsFromBackend(completion: @escaping (_ error: Error?, _ rooms: [Room]?) -> Void) {
         guard let auth_token = UserDefaults.standard.object(forKey: "auth_token") as? String else {
             completion(nil, nil)
@@ -42,7 +31,6 @@ class GetRooms:NSObject{
                     return
                 }
                 
-                
                 var rooms = [Room]()
                 for data in json {guard let data = data.dictionary else {return}
                 
@@ -61,11 +49,11 @@ class GetRooms:NSObject{
             completion(nil, rooms)
             print(Realm.Configuration.defaultConfiguration.fileURL!)
             
+            }
         }
     }
-    
-    
-        func getRoomsFromRealm(completion: @escaping (_ error: Error?, _ rooms: [Room]?) -> Void) {
+
+    class  func getRoomsFromRealm(completion: @escaping (_ error: Error?, _ rooms: [Room]?) -> Void) {
         guard (UserDefaults.standard.object(forKey: "auth_token") as? String) != nil else {
             completion(nil, nil)
             return
@@ -77,7 +65,6 @@ class GetRooms:NSObject{
         
         for data in offRooms {
             let room = Room()
-            
             room.id = data.id
             room.descriptionText = data.descriptionText
             room.price = data.price
@@ -87,6 +74,5 @@ class GetRooms:NSObject{
             rooms.append(room)
         }
         completion(nil, rooms)
-    }
     }
 }

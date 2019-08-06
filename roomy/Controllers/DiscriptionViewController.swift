@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import Kingfisher
 
-class listingScreen: UIViewController {
+class DiscriptionViewController: UIViewController {
     @IBOutlet weak var listingImageView: UIImageView!
     @IBOutlet weak var infoLabel: UILabel!
     

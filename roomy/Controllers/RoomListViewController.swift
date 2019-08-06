@@ -5,13 +5,11 @@
 //  Created by Mohamed Elbassiouny on 7/16/19.
 //  Copyright © 2019 Mohamed Elbassiouny. All rights reserved.
 //
-import Alamofire
 import UIKit
 import NVActivityIndicatorView
-class RoomListScreen: UIViewController, NVActivityIndicatorViewable {
+class RoomListViewController: UIViewController, NVActivityIndicatorViewable {
    
     @IBOutlet weak var roomTableView: UITableView!
-    
 
     var currentIndex = 0
     var rooms : [Room] = []
@@ -28,8 +26,8 @@ class RoomListScreen: UIViewController, NVActivityIndicatorViewable {
             navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
             navigationController?.navigationBar.shadowImage = UIImage()
             roomTableView.addSubview(refresher)
-            let myXibFile = UINib(nibName: "RoomyCell", bundle: nil)
-        roomTableView.register(myXibFile, forCellReuseIdentifier: "roomyCell")
+            let myXibFile = UINib(nibName: "RoomTableViewCell", bundle: nil)
+            roomTableView.register(myXibFile, forCellReuseIdentifier: "roomyCell")
             handleRooms()
         }
         
@@ -69,38 +67,10 @@ class RoomListScreen: UIViewController, NVActivityIndicatorViewable {
         
     }
 
-    
-//    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-//        let room = rooms[indexPath.row]
-//
-//        let cell = tableView.dequeueReusableCell(withIdentifier:  "roomCell") as! RoomTableViewCell
-//        cell.configCell(roomData: room)
-//        cell.selectionStyle = .none
-//        return cell
-//    }
 
-//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        performSegue(withIdentifier: "segue", sender: self)
-//    }
-////
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//
-//        if let destination = segue.destination as? listingScreen{
-//            destination.desc = Room[currentIndex]
-//        }
-//    }
+extension RoomListViewController: UITableViewDelegate {}
 
-//
-//}
-
-
-
-
-
-
-extension RoomListScreen: UITableViewDelegate {}
-
-extension RoomListScreen: UITableViewDataSource {
+extension RoomListViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return rooms.count
     }
@@ -123,13 +93,13 @@ extension RoomListScreen: UITableViewDataSource {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let destination = segue.destination as? listingScreen {
+        if let destination = segue.destination as? DiscriptionViewController {
             destination.desc = rooms[currentIndex]
         }
     }
 }
 
-extension RoomListScreen: UITextFieldDelegate {
+extension RoomListViewController: UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         return true
